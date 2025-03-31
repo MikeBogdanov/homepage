@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Bogdanov - Database & BI Expert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        img {
+            width: 150px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+        .contact-btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .contact-form {
+            display: none;
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .submit-btn {
+            background-color: #28A745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Optimizing Data, Accelerating Business</h1>
+        <p>Your data is the key to smarter decisions and business growth. I help companies build reliable, scalable, and high-performance data solutions.</p>
+        <img src="me_big.png" alt="Mike Bogdanov">
+        
+        <h2>What I Offer</h2>
+        <ul style="text-align: left; display: inline-block;">
+            <li>Database and Business Intelligence Architecture</li>
+            <li>Database Performance Tuning and Optimization</li>
+            <li>ETL (Extract, Transform, Load) and Data Pipelines</li>
+            <li>Cloud and On-Premises Data Warehouses</li>
+            <li>Reporting and Business Intelligence Solutions</li>
+            <li>Data Modeling</li>
+        </ul>
+        
+        <h2>Technologies I Work With</h2>
+        <ul style="text-align: left; display: inline-block;">
+            <li>Microsoft SQL Server (SSIS, SSAS, SSRS, Azure Data Factory, Power BI)</li>
+            <li>PostgreSQL, MySQL, and other RDBMS</li>
+            <li>Databricks, Snowflake, Domo</li>
+            <li>Google Cloud Platform</li>
+        </ul>
+        
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:m.o.bogdanov@gmail.com">m.o.bogdanov@gmail.com</a></p>
+        <p>Phone / WhatsApp: <a href="tel:+995599673398">+995 599 673 398</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mikebogdanov/" target="_blank">linkedin.com/in/mikebogdanov</a></p>
+        
+        <button class="contact-btn" onclick="document.querySelector('.contact-form').style.display='block'">Get in Touch</button>
+        
+        <div class="contact-form">
+            <form action="send_email.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Request" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
